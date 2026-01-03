@@ -1,0 +1,126 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f9f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgb(0, 149, 255);
+            color: white;
+            padding: 1.2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 16px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 24px;
+        }
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        .section-title {
+            color: #c8102e;
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #f0e0d6;
+        }
+        .content-row {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .media-box {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+        .media-box img, .media-box video {
+            width: 100%;
+            height: 320px;
+            display: block;
+        }
+        .desc-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .desc-box h3 {
+            font-size: 1.3rem;
+            color: #c8102e;
+            margin-bottom: 16px;
+        }
+        .desc-box p {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+        .dishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin-top: 16px;
+        }
+
+        .dish-card {
+            background-color: #fef9f6;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            
+        }
+        .dish-img {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            border-radius: 4px;
+        }
+        .dish-desc {
+            padding: 16px;
+        }
+        .dish-desc h4 {
+            color: rgb(0, 149, 255);
+            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
+        }
+        .dish-desc p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        .content-row {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+        .section {
+                padding: 1.5rem;
+            }
+
+         header h1 {
+                font-size: 1.7rem;
+            }
+
+        .media-box img, .media-box video {
+                height: 260px;
+            }
