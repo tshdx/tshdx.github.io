@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中华美食 - 首页</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">中华美食网</div>
+        <div class="nav">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="鲁菜.html">鲁菜</a>
+            <a href="苏菜.html">苏菜</a>
+            <a href="川菜.html">川菜</a>
+            <a href="粤菜.html">粤菜</a>
+            <a href="湘菜.html">湘菜</a>
+        </div>
+    </div>
+
+    <div id="ad">
+        <div id="leftbtn">&lt;</div>
+        <div id="rightbtn">&gt;</div>
+    </div>
+
+
+    <div class="container">
+        <div class="nav" style="margin: 20px 0;">
+            <div id="yanse">
+                <span>鲁菜</span>
+                <a href="鲁菜.html" style="margin-left: 10px;">经典菜品</a>
+            </div>
+            <div id="yanse">
+                <span>苏菜</span>
+                <a href="苏菜.html" style="margin-left: 10px;">经典菜品</a>
+            </div>
+            <div id="yanse">
+                <span>川菜</span>
+                <a href="川菜.html" style="margin-left: 10px;">经典菜品</a>
+            </div>
+            <div id="yanse">
+                <span>粤菜</span>
+                <a href="粤菜.html" style="margin-left: 10px;">经典菜品</a>
+            </div>
+            <div id="yanse">
+                <span>湘菜</span>
+                <a href="湘菜.html" style="margin-left: 10px;">经典菜品</a>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 30px; margin-top: 30px; display: flex;flex-wrap: wrap;justify-content: flex-start;">
+            <div class="cuisine-intro" style="flex: 1;">
+                <h2 class="cuisine-title">鲁菜</h2>
+                <div class="cuisine-media">
+                    <img src="image/鲁菜/1.jpg" alt="鲁菜">
+                </div>
+                <p class="cuisine-desc">鲁菜，中国四大菜系之首，历史悠久，技法精湛，以咸鲜为主，讲究原汁原味，擅长爆、炒、烧、焖等烹饪方式。</p>
+                <a href="鲁菜.html" class="cuisine-link">查看详情</a>
+            </div>
+            <div class="cuisine-intro" style="flex: 1;">
+                <h2 class="cuisine-title">苏菜</h2>
+                <div class="cuisine-media">
+                    <img src="image/苏菜/1.jpg" alt="苏菜">
+                </div>
+                <p class="cuisine-desc">苏菜，又称淮扬菜，以清淡雅致著称，注重刀工与造型，味道鲜醇，甜咸适中，擅长炖、焖、蒸、炒等技法。</p>
+                <a href="苏菜.html" class="cuisine-link">查看详情</a>
+            </div>
+            <div class="cuisine-intro" style="flex: 1;">
+                <h2 class="cuisine-title">川菜</h2>
+                <div class="cuisine-media">
+                    <img src="image/川菜/1.jpg" alt="川菜">
+                </div>
+                <p class="cuisine-desc">川菜，以麻辣著称，口味丰富多样，讲究色香味俱全，擅长炒、煮、炖、熏等烹饪方法，深受大众喜爱。</p>
+                <a href="川菜.html" class="cuisine-link">查看详情</a>
+            </div>
+            <div class="cuisine-intro" style="flex: 1;">
+                <h2 class="cuisine-title">粤菜</h2>
+                <div class="cuisine-media">
+                    <img src="image/粤菜/1.jpg" alt="粤菜">
+                </div>
+                <p class="cuisine-desc">粤菜，以清淡鲜美著称，注重食材本味，讲究色香味形，擅长蒸、煲、炒、炖等烹饪技法，风味独特。</p>
+                <a href="粤菜.html" class="cuisine-link">查看详情</a>
+            </div>
+            <div class="cuisine-intro" style="flex: 1;">
+                <h2 class="cuisine-title">湘菜</h2>
+                <div class="cuisine-media">
+                    <img src="image/湘菜/1.jpg" alt="湘菜">
+                </div>
+                <p class="cuisine-desc">湘菜，以辣味著称，口味浓郁，注重色香味形，擅长炒、熏、腌、炖等烹饪方法，具有独特的地域风味。</p>
+                <a href="湘菜.html" class="cuisine-link">查看详情</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer main">
+        <marquee behavior="scroll" direction="right" onMouseOut="this.start()" OnMouseOver="this.stop()">中华美食网</marquee>
+        <p id="rili">
+            <script>
+                function rili()
+                {
+                    var date=new Date();
+                    var year=date.getFullYear();
+                    var month=date.getMonth()+1;
+                    var day=date.getDate();
+                    var week=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六")[date.getDay()];
+                    var hour=date.getHours() < 10 ? "0"+date.getHours() : date.getHours();
+                    var minute=date.getMinutes() < 10 ? "0"+date.getMinutes() : date.getMinutes();
+                    var second=date.getSeconds() < 10 ? "0"+date.getSeconds() : date.getSeconds();
+                    var str = year+"年"+month+"月"+day+"日 "+" "+hour+":"+minute+":"+second+" "+week;
+                    document.getElementById("rili").innerHTML=str;
+                }
+                var V=setInterval(function(){rili()},1000);
+            </script>
+        </p>
+    </div>
+
+    
+    <script>
+        var imgsURL = ["css/轮播图/1.jpg", "css/轮播图/2.jpg", "css/轮播图/3.jpg", "css/轮播图/4.jpg", "css/轮播图/5.jpg", "css/轮播图/6.jpg", "css/轮播图/7.jpg", "css/轮播图/8.jpg", "css/轮播图/9.jpg", "css/轮播图/10.jpg", "css/轮播图/11.jpg", "css/轮播图/12.jpg"];
+        var arrowLeft=document.getElementById("leftbtn");
+        var arrowRight=document.getElementById("rightbtn");
+        arrowLeft.addEventListener("click", preMove);
+        arrowRight.addEventListener("click", nextMove);
+        var index=0;
+        function preMove() {
+            index--;
+            if (index < 0) index=11; 
+            document.getElementById("ad").style.backgroundImage = "url(" + imgsURL[index] + ")";
+        }
+        function nextMove() {
+            index++;
+            if (index > 11) index = 0;
+            document.getElementById("ad").style.backgroundImage = "url(" + imgsURL[index] + ")";
+        }
+        setInterval(nextMove, 3000);
+    </script>
+    
+</body>
+</html>
